@@ -1,0 +1,1027 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Jost:ital,wght@0,200;0,300;1,200&family=Manrope:wght@200;300;400&family=Martel+Sans:wght@200;300;400&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+.Main-menu{
+    color: #FFFFFF;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(photo/IMG_20201009_205430.jpg);
+    background-position: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+.icon-click {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index: 10;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+.slider-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FFFFFF;
+
+    height: 100vh;
+    width: 0px;
+    overflow: hidden;
+    position: fixed;
+
+}
+.slider-menu li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+}
+.slider-menu li a{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 330.5%;
+    /* or 56px */
+    letter-spacing: 0.085em;
+    text-transform: capitalize;
+    color: #3F3F3F;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+.menu h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125.02%;
+    /* identical to box height, or 45px */
+
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+.menu h1 span{
+    color: #FFCF45;
+}
+
+.icon {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.menu-icon{
+    height: 3px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+}
+
+.top-icon {
+    width: 90%;
+}
+
+.middle-icon {
+    width: 100%;
+}
+
+.down-icon {
+    width: 80%;
+}
+
+
+.Designer{
+    padding-top: 6%;
+    padding-left: 10%;
+}
+.Designer span{
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 126.02%;
+    /* identical to box height, or 23px */
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.Designer h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 108px;
+    line-height: 111.02%;
+    /* or 120px */
+
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Designer p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 198.02%;
+    /* or 48px */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.Designer button{
+    padding: 10px 20px;
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 234.52%;
+    /* identical to box height, or 45px */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.Designer button:hover{
+    color: #000;
+    background: #FFFFFF;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.About-me{
+    position: relative;
+}
+.About-me h1{
+    font-family: 'Jost';
+    font-size: 120px;
+    line-height: 150.02%;
+    /* identical to box height, or 180px */
+    color: #F8F8F8;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+.About-me h1 span{
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 126.02%;
+    /* identical to box height, or 28px */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: absolute;
+    color: #111111;
+    top: 70px;
+    left: 140px;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+}
+.About-me p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 237.52%;
+    /* or 40px */
+    letter-spacing: 0.02em;
+    color: #555555;
+    margin-bottom: 40px;
+}
+.About-me button{
+    padding: 5px 10px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 234.52%;
+    /* identical to box height, or 40px */
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: #181818;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.About-me button:hover{
+    color: #181818;
+    background: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.progess{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    gap: 1rem;
+    margin-top: 200px;
+}
+.progess h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    /* or 124% */
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: #2F2F2F;
+}
+.progess .underline{
+    width: 300px;
+    height: 2px;
+    background: #DBDBDB;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+    z-index: 1;
+}
+.progess .underline .line1{
+    background:#3A3422;
+    position: absolute;
+    height: 2px;
+    width: 280px;
+    top: 0;
+    left: 0;
+}
+.underline .line2{
+    background:#3A3422;
+    position: absolute;
+    height: 2px;
+    width: 270px;
+    top: 0;
+    left: 0;
+}
+.underline .line3{
+    background:#3A3422;
+    position: absolute;
+    height: 2px;
+    width: 250px;
+    top: 0;
+    left: 0;
+}
+.underline .line4{
+    background:#3A3422;
+    position: absolute;
+    height: 2px;
+    width: 190px;
+    top: 0;
+    left: 0;
+}
+.underline .line5{
+    background:#3A3422;
+    position: absolute;
+    height: 2px;
+    width: 240px;
+    top: 0;
+    left: 0;
+}
+.Proteolio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.Proteolio h1{
+    font-family: 'Jost';
+    font-size: 120px;
+    line-height: 150.02%;
+    /* identical to box height, or 180px */
+    color: #F8F8F8;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+.Proteolio h1 span{
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 126.02%;
+    /* identical to box height, or 28px */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: absolute;
+    color: #111111;
+    top: 70px;
+    left: 40%;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+}
+.latest-works{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    gap: 5rem;
+    padding: 20px;
+}
+.left-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.left-sidebar img{
+    width: 100%;
+}
+.right-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.right-sidebar img{
+    width: 100%;
+}
+.sidebar a{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 27px;
+    /* or 104% */
+    text-decoration: none;
+    text-align: right;
+    text-transform: lowercase;
+    color: #2F2F2F;
+    border-bottom: 2px solid #181818;
+    
+}
+.right-sidebar .other{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+.right-sidebar .other a{
+    padding: 10px 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 234.52%;
+    /* identical to box height, or 40px */
+    text-align: left;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #181818;
+    cursor: pointer;
+    align-items: center;
+}
+.right-sidebar a {
+    text-decoration: none;
+    border-bottom: 2px solid #181818;
+}
+.underline{
+    width: 250px;
+    height: 2px;
+    background: #DBDBDB;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+    z-index: 1;
+}
+.Quote{
+    text-align: center;
+    background:#0D0D0D;
+    color: #F8F8F8;
+    position: relative;
+    padding: 100px;
+    width: 100%;
+
+}
+.Quote h1{
+    font-family: 'Jost';
+    font-size: 120px;
+    line-height: 150.02%;
+    /* identical to box height, or 180px */
+
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #EAEAEA;
+    margin-bottom: -30px;
+}
+.Quote .outline{
+    width: 100px;
+    height: 2px;
+    background: #FFFFFF;
+    margin: auto;
+}
+.Quote p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 174%;
+    /* or 59px */
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Quote span{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+    color: #999999;
+}
+.Quote::before{
+    background-image: url(photo/Vector.png);
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+.Quote::after{
+    background-image: url(photo/Vector88.png);
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 0;
+}
+.Gard{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+.frame{
+    border-bottom: 1px solid #E2E2E2;
+    padding: 10px;
+}
+.Gard .frame h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    /* identical to box height */
+    text-transform: capitalize;
+    color: #111111;
+}
+.Gard .frame p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 188.02%;
+    /* or 36px */
+    letter-spacing: 0.02em;
+    color: #282828;
+}
+
+.Main-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container::after{
+    content: '';
+    width: 400px;
+    background: #000;
+    position: absolute;
+    height: 500px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0.3;
+    overflow: hidden;
+    transform: scale(0);
+    transition:all 0.4s ease-in-out;
+}
+
+.container img {
+    width: 100%;
+    z-index: 5;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+.container img:hover{
+    transform: scale(1.2);
+}
+
+.container:hover::after {
+    transform: scale(1);
+}
+
+
+.Graphic{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 30;
+}
+.Graphic span{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #FCFCFC;
+}
+.Graphic h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 160%;
+    /* or 42px */
+
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+.View{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.View a{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 234.52%;
+    /* identical to box height, or 38px */
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #111111;
+    text-decoration: none;
+}
+.Testimonials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(photo/testimonials.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+.Testimonials h1{
+    font-family: 'Jost';
+    font-size: 120px;
+    line-height: 150.02%;
+    /* identical to box height, or 180px */
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.Testimonials h1 span{
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 126.02%;
+    /* identical to box height, or 28px */
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 70px;
+    left: 40%;
+    background: #181818;
+}
+.Testimonials p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 183.02%;
+    /* or 53px */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.lucas {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center;
+}
+.lucas img{
+    width: 60px !important;
+    margin-top: 20px;
+    
+}
+.lucas p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 225.02%;
+    /* or 47px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.lucas span{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 178.52%;
+    /* identical to box height, or 25px */
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+}
+.Main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+.left-footer{
+    display: grid;
+    gap: 1rem;
+}
+.left-footer h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125.02%;
+    /* identical to box height, or 45px */
+
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+
+    color: #1A1A1A;
+}
+.left-footer h1 span{
+    color: #FFCF45;
+}
+.left-footer p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 225.02%;
+    /* or 38px */
+    letter-spacing: 0.02em;
+    color: #494949;
+}
+.left-footer input{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #181818;
+    padding: 10px 20px;
+    background:#F4F4F4;
+    outline: none;
+    border: 0;
+}
+::placeholder{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #494949;
+}
+.left-footer button{
+    padding: 10px 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #181818;
+    border: 1px;
+    cursor: pointer;
+    transition:all 0.1s ease-in-out;
+}
+.left-footer button:hover{
+    background: #FFFFFF;
+    color: #181818;
+}
+.right-footer{
+    display: flex;
+    gap: 3rem;
+    margin-top: 40px;
+
+}
+.right-footer a{
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 330.5%;
+    /* or 56px */
+    text-decoration: none;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+    color: #8F8F8F;
+}
+.right-footer a:hover{
+    color: #3F3F3F;
+}
+.just a{
+    text-transform: lowercase;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 183.02%;
+    /* identical to box height, or 55px */
+    letter-spacing: 0.01em;
+    color: #2F2F2F;
+    border-bottom-style: solid;
+}
+.just p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 225.02%;
+    /* or 38px */
+    margin-top: 8px;
+    letter-spacing: 0.02em;
+
+    color: #494949;
+}
+.Bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background: #181818;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+.Bottom .Links a {
+    margin: 0 20px;
+}
+@media (max-width: 900px) {
+    .Main-menu{
+        background-position: 70%-0vh;
+    }
+    .menu{
+        position: sticky;
+        top: 0;
+    }
+    .Designer span{
+        font-size: 13px;
+    }
+    .Designer h1{
+        font-size: 30px;
+    }
+    .Designer h1 br{
+        display: none;
+    }
+    .Designer p{
+        font-size: 15px;
+    }
+    .Designer button{
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    .About{
+        display: block;
+        padding: 20px;
+    }
+    .About-me h1{
+        font-family: 'Jost';
+        font-size: 50px;
+        line-height: 150.02%;
+        /* identical to box height, or 180px */
+        color: #F8F8F8;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .About-me h1 span{
+        font-family: 'Inconsolata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 126.02%;
+        /* identical to box height, or 28px */
+    
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        position: absolute;
+        color: #111111;
+        top: 23px;
+        left: 130px;
+        background: #FFFFFF;
+        border: 2px solid #F8F8F8;
+    }
+    .About-me button{
+        font-size: 11px;
+    }
+    .About-me p br{
+        display: none;
+    }
+    .progess{
+        margin-top: 20px;
+        padding: 0;
+    }
+    .latest-works{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 1rem;
+    }
+    .sidebar a{
+        font-size: 18px;
+    }
+    .right-sidebar .other a{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .Quote{
+        padding: 0;
+        margin: 0;
+    }
+    .Quote h1{
+        font-size: 20px;
+        margin: 0;
+    }
+    .Quote p{
+        font-size: 14px;
+    }
+    .Quote span{
+        font-size: 11px;
+    }
+    .Quote::before{
+        display: none;
+    }
+    .Quote::after{
+        display: none;
+    }
+    .Proteolio h1{
+        font-family: 'Jost';
+        font-size: 50px;
+        line-height: 150.02%;
+        /* identical to box height, or 180px */
+        color: #F8F8F8;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+    }
+    .Proteolio h1 span{
+        font-family: 'Inconsolata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 126.02%;
+        /* identical to box height, or 28px */
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        position: absolute;
+        color: #111111;
+        top: 30px;
+        left: 30%;
+        background: #FFFFFF;
+        border: 2px solid #F8F8F8;
+    }
+    .Gard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Testimonials h1{
+        font-family: 'Jost';
+        font-size: 50px;
+        line-height: 150.02%;
+        /* identical to box height, or 180px */
+        text-align: center;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    .Testimonials h1 span{
+        font-family: 'Inconsolata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 126.02%;
+        /* identical to box height, or 28px */
+        color: #FFFFFF;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        position: absolute;
+        top: 30px;
+        left: 30%;
+        background: #181818;
+    }
+    .lucas p{
+        font-size: 11px;
+    }
+    .lucas img{
+        width: 30px !important;
+    }
+    .lucas span{
+        font-size: 10px;
+    }
+    .Main-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .left-footer{
+        padding: 0;
+    }
+    .right-footer{
+        display: block;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .right-footer a{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Bottom{
+        display: block;
+        padding: 10px;
+    }
+}
